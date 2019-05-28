@@ -3,18 +3,6 @@
 This is intended to be the simplest possible Eclipse Che project to allow a developer to compile
 and run a Hello, World in C.
 
-## Why C?
-
-Because the C compiler and GNU Make are available everywhere, their syntax is essentially
-unchanged since the 1970s, and so I could in theory concentrate on the part I cared about -
-creating a minimal devfile.
-
-## What is a devfile?
-
-A devfile is a metadata file for describing a developer workspace. A developer workspace is
-a set of containers which will run on Kubernetes, which allow a developer to make changes to
-a project and run them using Eclipse Che.
-
 ## What is Eclipse Che?
 
 Eclipse Che is an IDE as a Service and developer workspace management tool, primarily for
@@ -31,3 +19,19 @@ test/pre-prod/prod environments running on Kubernetes. It can also centralize th
 supply chain, allowing IT operations teams in companies who want to limit the application
 runtimes and developer tools available to their developers to run the development cloud
 "air-gapped" from the internet.
+
+## What is a devfile?
+
+A devfile is a metadata file for describing a developer workspace. A developer workspace is
+a set of containers which will run on Kubernetes, which allow a developer to make changes to
+a project and run them using Eclipse Che.
+
+The devfile defines which containers will run as part of the workspace, what resources they
+require, any environment variables or configuration required, and any commands which should
+be pre-defined for the developer.
+
+## Why C?
+
+Because the C compiler and GNU Make are available everywhere, their syntax is essentially
+unchanged since the 1970s, and so I could in theory concentrate on the part I cared about -
+creating a minimal devfile.
