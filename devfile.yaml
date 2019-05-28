@@ -1,0 +1,33 @@
+specVersion: 0.0.1
+name: hello-world
+projects:
+  - source:
+      type: git
+      location: https://github.com/dneary/hello-world.git
+components:
+  - alias: c-dev
+    type: dockerimage
+    image: centos:latest
+    command: ['/bin/sh', '-c']
+    args: ['tail -f /dev/null']
+    env:
+      - name: TERM
+        value: xterm
+    mountsources: true
+    memoryLimit: 500M
+commands:
+  - name: build
+    actions:
+      - type: exec
+        component: c-dev
+        command: make
+        workdir: /projects/hello-world
+  - name: run
+    attributes:
+      runType: sequential
+    actions:
+      - type: exec
+        component: c-dev
+        command: hello
+        workdir: /projects/hello-world
+
