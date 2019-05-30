@@ -6,3 +6,5 @@ hello: hello.o
 hello.o:
 	gcc -c hello.c
 
+clean:
+	rm hello.o hello
