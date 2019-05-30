@@ -175,6 +175,6 @@ features for GDB from the user interface. When I open up `hello.c`, I get
 an error that the Clangd language server is not started.
 
 Future articles will talk more about what is involved in running developer
-tools alongside the workspace, and using VS Code plug-ins.
+tools alongside the workspace, using VS Code plug-ins, and how to commit changes to github, or create a github PR.
 
 
