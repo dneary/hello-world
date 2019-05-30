@@ -44,6 +44,10 @@ Hello, world!
 
 Looking good!
 
+I checked this into [a new github repo](https://github.com/dneary/hello-world)
+and we're ready to move on to create a developer workspace definition for
+Eclipse Che.
+
 ## Step 1: creating a Devfile
 
 Now that we have our project, we will want a few things in our developer
