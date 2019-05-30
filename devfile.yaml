@@ -29,6 +29,6 @@ commands:
     actions:
       - type: exec
         component: c-dev
-        command: hello
+        command: ./hello
         workdir: /projects/hello-world
 
