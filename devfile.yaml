@@ -8,7 +8,7 @@ projects:
 components:
   - alias: c-dev
     type: dockerimage
-    image: centos:latest
+    image: dneary/gcc-dev:1
     command: ['/bin/sh', '-c']
     args: ['tail -f /dev/null']
     env:
