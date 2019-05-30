@@ -1,7 +1,8 @@
 specVersion: 0.0.1
 name: hello-world
 projects:
-  - source:
+  - name: hello-world
+    source:
       type: git
       location: https://github.com/dneary/hello-world.git
 components:
@@ -13,7 +14,7 @@ components:
     env:
       - name: TERM
         value: xterm
-    mountsources: true
+    mountSources: true
     memoryLimit: 500M
 commands:
   - name: build
