@@ -145,7 +145,8 @@ No sweat, let's break out a Dockerfile.
 ## Creating a custom image
 
 To get a suitable base image, we will need to install updates on the base
-CentOS image, and install make and gcc.
+CentOS image, and install make and gcc. The Dockerfile below (included in
+the repo for reference) does that for us.
 
 ```dockerfile
 FROM centos:latest
